@@ -1,0 +1,39 @@
+<html>
+<head> 
+    <title> Visual Model </title>
+</head>
+<style type="text/css">
+body{
+    color:#454545;
+}
+ul.list>li{color: #000;}
+</style>
+<body>
+    <ul class="list">
+        <li> Input 1</li>
+        <li> Input 2</li>
+        <li> Input 3</li>
+        <li> Input 4</li>
+    </ul>
+    <input type="text" id="update" value="">
+    <button type="submit" id="insert">  Insert </button>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    alert('haxkhx');
+    $('ul.list').children('li:nth-child(3)').css('color','red');
+
+    $('#insert').on('click',function(){
+       // console.log($('#update').val());
+       if ($('#update').val().length === 0)
+      {
+          $('#update').hide();
+          alert("Enter Value");
+      }
+      else{
+         $('<li></li>',{ text:$('#update').val()}).insertAfter('.list li:last-child');
+     }
+ });
+});</script>
+</html>

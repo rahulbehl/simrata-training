@@ -1,0 +1,13 @@
+.all {
+  list-style: none; }
+  .all .star {
+    display: inline-block;
+    float: left;
+    padding: 10px; }
+    .all .star:hover i.fa {
+      color: yellow; }
+    .all .star:selected i.fa {
+      color: yellow; }
+    .all .star i.fa {
+      font-size: 70px;
+      color: grey; }

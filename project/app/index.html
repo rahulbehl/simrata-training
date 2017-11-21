@@ -1,0 +1,239 @@
+<html>
+<head>
+	<title>Hockey Pool</title>
+	<!--build:css css/main.min.css -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.1.custom.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery.selectBoxIt.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pool.css">
+	<!-- endbuild -->
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="head">
+			<div class="col-sm-5 caption">
+				POOL CREATOR
+			</div>
+			<div class="col-sm-7 pool"> 
+				<p> POOL   TYPE: </p> 
+				<select class="poolselect">
+					<option value="head">Head 2 Head</option>
+					<option value="goal">Head 2 Goal</option>
+					<option value="ground">Foot 2 Goal</option>
+					<option value="hand">Hand To Goal</option>
+				</select>
+			</div>
+		</div>
+		<div class="section-one">
+			<div id="crouton">
+				<ul>
+					<li><a style="padding: 1.2em 71px;" href="#"> <span class="num"> 1 </span> Setup</a></li>
+					<li><a style="padding: 1.2em 70px;" href="#"><span class="num"> 2 </span> Teams</a></li>
+					<li><a style="padding: 1.2em 70px;" href="#"><span class="num"> 3 </span> Draft </a></li>
+					<li><a style="padding: 1.2em 70px;" href="#"><span class="num"> 4 </span> </a></li>
+					<li><a style="padding: 1.2em 70px;" href="#"><span class="num"> 5 </span> </a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="section-two">
+			<div class="form">
+				<form method='GET' action='pool2.html'>
+					<p> POOL SETTINGS </p>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Pool Name</div> <div class="line"> </div> </div>
+						<div class="col-sm-7"> <input style="background: linear-gradient(to bottom, #ffffff, #f5f7f9);" type="text" placeholder="Enter pool name..." > </div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Pool Format</div> <div class="line"></div></div>
+						<div class="col-sm-7">
+							<select class="long">
+								<option style="max-width:600px;" value="head">Head 2 Head - Categories (1)</option>
+								<option value="goal">Head 2 Goal</option>
+								<option value="ground">Foot 2 Goal</option>
+								<option value="hand">Hand To Goal</option>
+							</select> 
+							<a id="tooltip" href="#" data-toggle="tooltip" data-placement="bottom" title="Tool Tip: You need to select according to your category. "> ? </a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Playoff Format</div><div class="line"> </div> </div>
+						<div class="col-sm-7"> 
+							<select class="long">
+								<option value="head">None</option>
+								<option value="goal">Head 2 Goal</option>
+								<option value="ground">Foot 2 Goal</option>
+								<option value="hand">Hand To Goal</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"> <div class="text">Lock Eliminated Teams?</div><div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</div>  
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text">Maximum Number of Teams</div><div class="line"> </div>  </div>
+						<div class="col-sm-7"> 
+							<select class="number">
+								<option value="12">12</option>
+								<option value="11">11</option>
+								<option value="10">10</option>
+								<option value="9">9</option>
+								<option value="8">8</option>
+								<option value="7">7</option>
+								<option value="6">6</option>
+								<option value="5">5</option>
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="2">2</option>
+								<option value="1">1</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> League Start Week </div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="normal">
+								<option value="first">1st Week</option>
+								<option value="second">2nd Week</option>
+								<option value="third">3rd Week</option>
+								<option value="fourth">4th Week</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Minimum Goalie Appearences</div> <div class="line"> </div> </div>
+						<div class="col-sm-7"> 
+							<select class="number">
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Draft Order</div><div class="line"> </div> </div>
+						<div class="col-sm-7"> 
+							<select class="normal">
+								<option value="first">Snake</option>
+								<option value="second">Lizard</option>
+								<option value="third">Parrot</option>
+								<option value="fourth">Cat</option>
+							</select>
+						</div>
+					</div>
+					<br>
+					<br>
+					<p> ACQUISITION SETTINGS </p>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Max Aquisitions Per Team</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="large">
+								<option value="nomax">No maximum</option>
+								<option value="nomin">No minimum</option>
+								<option value="twelve">12</option>
+								<option value="six">6</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Max Aquisitions Per Week</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="number">
+								<option value="6">6</option>
+								<option value="5">5</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Max Trades Per Season </div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="large">
+								<option value="nomax">No maximum</option>
+								<option value="nomin">No minimum</option>
+								<option value="twelve">12</option>
+								<option value="six">6</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Trade End Date </div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker5'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"><div class="text"> Allowing Trading Draft Picks</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<div class="yesnoswitch">
+								<input type="checkbox" name="yesnoswitch" class="yesnoswitch-checkbox" id="myyesnoswitch" checked>
+								<label class="yesnoswitch-label" for="myyesnoswitch">
+									<span class="yesnoswitch-inner"></span>
+									<span class="yesnoswitch-switch"></span>
+								</label>
+							</div> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"> <div class="text"> Trade Reject Time</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="normal">
+								<option value="two">2 Days </option>
+								<option value="three">3 Days</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"> <div class="text"> Waiver Mode</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="large">
+								<option value="standard">Standard</option>
+								<option value="casual">Casual</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5"> <div class="text"> Waiver Time</div> <div class="line"> </div></div>
+						<div class="col-sm-7"> 
+							<select class="normal">
+								<option value="two">2 Days </option>
+								<option value="three">3 Days</option>
+							</select>
+						</div>
+					</div>
+					<button id="teams" type="submit" value="SAVE AND CONTINUE TO TEAMS">SAVE AND CONTINUE TO TEAMS<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="javascripts/jquery.selectBoxIt.js"></script>
+<script type="text/javascript" src="javascripts/jquery.selectBoxIt.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/pool.js"></script>
+</html>

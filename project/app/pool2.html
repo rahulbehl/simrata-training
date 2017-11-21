@@ -1,0 +1,261 @@
+<html>
+<head>
+	<title>Pool Creator</title>
+	<!--build:css css/main.min.css -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.1.custom.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery.selectBoxIt.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pool.css">
+	<!-- endbuild -->
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+var queryString = new Array();
+$(function () {
+	$(".text1").hide();
+	$(".text2").hide();
+	if (queryString.length == 0) {
+		if (window.location.search.split('?').length > 1) {
+			var params = window.location.search.split('?')[1].split('&');
+			for (var i = 0; i < params.length; i++) {
+				var key = params[i].split('=')[0];
+				var value = decodeURIComponent(params[i].split('=')[1]);
+				queryString[key] = value;
+			}
+		}
+	}
+	var data = queryString["number"];
+	console.log(data);
+	switch (data) {
+		case ('1'):
+		$('#nameone').show(); $('#emailone').show();
+		break;
+
+		case ('2'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		break;
+
+		case ('3'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		break;
+
+		case ('4'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		break;
+
+		case ('5'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		break;
+
+		case ('6'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		break;
+
+		case ('7'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		break;
+
+		case ('8'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		$('#nameeight').show();  $('#emaileight').show();
+		break;
+
+		case ('9'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		$('#nameeight').show();  $('#emaileight').show();
+		$('#namenine').show();  $('#emailnine').show();
+		break;
+
+		case ('10'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		$('#nameeight').show();  $('#emaileight').show();
+		$('#namenine').show();  $('#emailnine').show();
+		$('#nameten').show();  $('#emailten').show();
+		break;
+
+		case ('11'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		$('#nameeight').show();  $('#emaileight').show();
+		$('#namenine').show();  $('#emailnine').show();
+		$('#nameten').show();  $('#emailten').show();
+		$('#nameeleven').show();  $('#emaileleven').show();
+		break;
+		
+		case ('12'):
+		$('#nameone').show(); $('#emailone').show();
+		$('#nametwo').show(); $('#emailtwo').show();
+		$('#namethree').show();  $('#emailthree').show();
+		$('#namefour').show();  $('#emailfour').show();
+		$('#namefive').show();  $('#emailfive').show();
+		$('#namesix').show();  $('#emailsix').show();
+		$('#nameseven').show();  $('#emailseven').show();
+		$('#nameeight').show();  $('#emaileight').show();
+		$('#namenine').show();  $('#emailnine').show();
+		$('#nameten').show();  $('#emailten').show();
+		$('#nameeleven').show();  $('#emaileleven').show();
+		$('#nametwelve').show();  $('#emailtwelve').show();
+		break;
+	}
+});
+</script>
+<body>
+	<div class="container-fluid">
+		<div class="head">
+			<div class="col-sm-5 caption">
+				POOL CREATOR
+			</div>
+			<div class="col-sm-7 pool"> 
+				<p> POOL   TYPE: </p> 
+				<select class="poolselect">
+					<option value="head">Head 2 Head</option>
+					<option value="goal">Head 2 Goal</option>
+					<option value="ground">Foot 2 Goal</option>
+					<option value="hand">Hand To Goal</option>
+				</select>
+			</div>
+		</div>
+		<div class="section-one">
+			<div id="crouton">
+				<ul>
+					<li><a href="#"> <i class="fa fa-check" aria-hidden="true"></i> Setup</a></li>
+					<li><a href="#"><span class="num"> 2 </span> Teams</a></li>
+						<li><a href="#"><span class="num"> 3 </span> Draft </a></li>
+						<li><a href="#"><span class="num"> 4 </span> </a></li>
+						<li><a href="#"><span class="num"> 5 </span> </a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="section-two">
+				<div class="form2">
+					<form style="padding-right:75px;" method='GET' action='pool3.html'>
+						<p id="headteam"> CREATE TEAMS </p>
+						<div class="col-sm-6">
+							<p class="name-email">
+								Team Name
+							</p>
+							<ol>
+								<li class="text1" id="nameone"> <input class="input name1"   type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="nametwo"> <input class="input name1" id="nametwo" type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="namethree"> <input class="input name1"  type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="namefour"> <input class="input name1" type="text" placeholder=" Enter team name...">
+								</li>
+
+								<li class="text1" id="namefive"> <input class="input name1" type="text"   placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="namesix"> <input class="input name1"   type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1"  id="nameseven"> <input class="input name1"  type="text" placeholder=" Enter team name...">
+							
+								<li class="text1" id="nameeight"> <input class="input name1"   type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="namenine"> <input class="input name1"  type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="nameten"> <input class="input name1"   type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1" id="nameeleven"> <input class="input name1"   type="text" placeholder=" Enter team name...">
+								</li>
+								<li class="text1"  id="nametwelve"> <input class="input name1"  type="text" placeholder=" Enter team name...">
+								</li>
+
+							</ol>
+						</div>
+						<div class="col-sm-6">
+							<p class="name-email2">
+								Invitee Email Address
+							</p>
+							<ul>
+								<li class="text2" id="emailone"> <input class="input email1" type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailtwo"> <input class="input email1" type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailthree"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2"  id="emailfour"> <input class="input email1" type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailfive"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailsix">  <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailseven"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emaileight"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailnine"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailten"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emaileleven"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+								<li class="text2" id="emailtwelve"> <input class="input email1"  type="email" placeholder="Enter email...">
+								</li>
+							</ul>
+						</div>
+
+						<div class="buttn"><button id="roster" type="submit" value="SAVE AND CONTINUE TO ROSTERS">SAVE AND CONTINUE TO ROSTERS <i class="fa fa-angle-right" aria-hidden="true"></i></button><div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</body>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.selectBoxIt.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.selectBoxIt.min.js"></script>
+
+		<script type="text/javascript" src="js/pool.js"></script>
+		</html>

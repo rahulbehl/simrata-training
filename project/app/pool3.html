@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teams In Pool</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.selectBoxIt.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/pool.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/newjquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+    $( "#sortable2" ).sortable({ placeholder: "border" });
+    $( "#sortable1" ).sortable({ placeholder: "border" });
+  } );
+  </script>
+  <script type="text/javascript">
+  var queryString = new Array();
+  $(function () {
+    if (queryString.length == 0) {
+      if (window.location.search.split('?').length > 1) {
+        var params = window.location.search.split('?')[1].split('&');
+        for (var i = 0; i < params.length; i++) {
+          var key = params[i].split('=')[0];
+          var value = decodeURIComponent(params[i].split('=')[1]);
+          queryString[key] = value;
+        }
+      }
+    }
+
+
+    var output='';
+    var data = JSON.parse(localStorage.getItem('info'));
+    console.log(data);
+    for (var key in data) {
+      if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[0][0])+'</p>' + '<p class="teamemail">'+ (data[0][1]+'</p>');
+        $('#order1').html(output);
+      }
+      if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[1][0])+'</p>' + '<p class="teamemail">'+ (data[1][1]+'</p>');
+        $('#order2').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[2][0])+'</p>' + '<p class="teamemail">'+ (data[2][1]+'</p>');
+        $('#order3').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[3][0])+'</p>' + '<p class="teamemail">'+ (data[3][1]+'</p>');
+        $('#order4').html(output);
+      }
+      if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[4][0])+'</p>' + '<p class="teamemail">'+ (data[4][1]+'</p>');
+        $('#order5').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[5][0])+'</p>' + '<p class="teamemail">'+ (data[5][1]+'</p>');
+        $('#order6').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[6][0])+'</p>' + '<p class="teamemail">'+ (data[6][1]+'</p>');
+        $('#order7').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[7][0])+'</p>' + '<p class="teamemail">'+ (data[7][1]+'</p>');
+        $('#order8').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[8][0])+'</p>' + '<p class="teamemail">'+ (data[8][1]+'</p>');
+        $('#order9').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[9][0])+'</p>' + '<p class="teamemail">'+ (data[9][1]+'</p>');
+        $('#order10').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[10][0])+'</p>' + '<p class="teamemail">'+ (data[10][1]+'</p>');
+        $('#order11').html(output);
+      }
+       if (data.hasOwnProperty(key)) {
+        output ='<p class="teamname">'+(data[11][0])+'</p>' + '<p class="teamemail">'+ (data[11][1]+'</p>');
+        $('#order12').html(output);
+      }
+    }
+  });
+</script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="head">
+      <div class="col-sm-5 caption">
+        POOL CREATOR
+      </div>
+      <div class="col-sm-7 pool"> 
+        <p> POOL   TYPE: </p> 
+        <select class="poolselect">
+          <option value="head">Head 2 Head</option>
+          <option value="goal">Head 2 Goal</option>
+          <option value="ground">Foot 2 Goal</option>
+          <option value="hand">Hand To Goal</option>
+        </select>
+      </div>
+    </div>
+    <div class="section-one">
+      <div id="crouton">
+        <ul>
+          <li><a style="padding: 1.2em 75px;" href="#"><i class="fa fa-check" aria-hidden="true"></i>Setup</a></li>
+          <li><a style="padding: 1.2em 75px;" href="#"><i class="fa fa-check" aria-hidden="true"></i>Teams</a></li>
+          <li><a style="padding: 1.2em 75px;" href="#"><span class="num"> 3 </span> Draft </a></li>
+          <li><a style="padding: 1.2em 74px;" href="#"><span class="num"> 4 </span> </a></li>
+          <li><a style="padding: 1.2em 74px;" href="#"><span class="num"> 5 </span> </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-two">
+      <div class="form3">
+       <!-- <div class="col-sm-11" id='warning'>
+          This page will be difficult to use by user on devices less than 450px.
+        </div> -->
+        <form>
+          <div class="row">
+            <div class="col-sm-6">
+              <p> DRAFT ORDER SELECTION </p>
+            </div>
+            <div id="rearrange" class="col-sm-6">
+              <p>Teams in Pool</p> <p style="margin-top: 8px;
+              color: gray;
+              font-size: 22px;
+              font-style: italic;
+              margin-left:5px;"> (Move into position)
+            </div>
+          </div>
+          <div class="col-sm-1"> <span class="num"> 1 </span>
+            <span class="num"> 2 </span>
+            <span class="num"> 3 </span>
+            <span class="num"> 4 </span>
+            <span class="num"> 5 </span> 
+            <span class="num"> 6 </span>
+            <span class="num"> 7 </span>
+            <span class="num"> 8 </span>
+            <span class="num"> 9 </span>
+            <span class="num"> 10 </span>
+            <span class="num"> 11</span>
+            <span class="num"> 12 </span>
+          </div>
+          <div class="col-sm-5">
+            <ul id="sortable1" class="connectedSortable">
+              <li class="ui-state-default"><div class="order" id="order1"></div><i class="fa fa-arrows"></i></li>
+              <li  class="ui-state-default"><div class="order" id="order2"></div><i class="fa fa-arrows"></i></li>
+              <li  class="ui-state-default"><div class="order" id="order3"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order4"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order5"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order6"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order7"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order8"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order9"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order10"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order11"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-default"><div class="order" id="order12"></div><i class="fa fa-arrows"></i></li>
+
+
+
+            </ul>
+          </div>
+          <!-- <div class="col-sm-1"></div> -->
+          <div class="col-sm-5" id="second-part"> 
+            <ul id="sortable2" class="connectedSortable">
+              <li class="ui-state-highlight"><div class="order" id="order1"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order2"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order3"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order4"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order5"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order6"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order7"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order8"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order9"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order10"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order11"></div><i class="fa fa-arrows"></i></li>
+              <li class="ui-state-highlight"><div class="order" id="order12"></div><i class="fa fa-arrows"></i></li>
+
+            </ul>
+          </div>
+          <div id="exit" >
+            <button id="players" type="submit" value="SAVE AND DRAFT PLAYERS">SAVE AND DRAFT PLAYERS<i class="fa fa-angle-right" aria-hidden="true" ></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.selectBoxIt.min.js"></script>
+<script type="text/javascript" src="js/pool.js"></script>
+</html>

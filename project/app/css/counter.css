@@ -1,0 +1,11 @@
+body .container {
+  width: 100%;
+  float: left;
+  margin-top: 20px; }
+  body .container #input {
+    border: 2px solid grey; }
+  body .container .counter {
+    margin-bottom: 20px; }
+    body .container .counter .digit {
+      border: 5px solid grey;
+      padding: 10px; }
