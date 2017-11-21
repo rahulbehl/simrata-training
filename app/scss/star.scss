@@ -1,0 +1,24 @@
+.all{
+	
+	list-style:none;
+	.star{
+		display:inline-block;
+		float:left;
+		padding:10px;
+		&:hover{
+			i.fa{
+				color:yellow;
+			}
+		}
+		&:selected{
+			i.fa{
+				color:yellow;
+			}
+		}
+		i.fa{
+			font-size:70px;
+			color:grey;
+
+		}
+	}
+}

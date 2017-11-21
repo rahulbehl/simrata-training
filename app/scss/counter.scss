@@ -1,0 +1,17 @@
+body{
+	.container{
+		width: 100%;
+		float: left;
+		margin-top: 20px;	
+		#input{
+				border: 2px solid grey;
+			}
+		.counter{
+			margin-bottom: 20px;
+			.digit{
+				border: 5px solid grey;
+				padding: 10px;
+			}
+		}
+	}
+}
