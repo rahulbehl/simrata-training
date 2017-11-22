@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Drag Drop</title>
+	
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/imagedragdrop.css">
+	
+</head>
+<body>
+	<form>
+		<div id="box" class="uploader">
+			<input type="file" name="userprofile_picture"  id="filePhoto" />
+			<div id="contain">
+				<img class="images" src="" />
+			</div>
+		</div>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	$(function() {
+		var imagesview = function(input, place) {
+
+			if (input.files) {
+				var num = input.files.length;
+				for (i = 0; i < num; i++) {
+					var reader = new FileReader();
+					reader.onload = function(event) {
+						$($.parseHTML('<img>')).attr('src', event.target.result).appendTo(place).css('width','150px');
+					}
+					reader.readAsDataURL(input.files[i]);
+					console.log(event.target.result);
+					console.log(input.files[i]);
+				}
+			}
+		};
+                
+		$('#filePhoto').on('change', function() {
+			imagesview(this, '#contain');
+		});
+	});
+	</script>
+</body>
+</html>
