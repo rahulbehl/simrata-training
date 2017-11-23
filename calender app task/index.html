@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Appointment Scheduler</title>
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <h3>Welcome to Appointment Scheduler</h3>
+        <p>Click to select date <input type="text" id="datepicker"></p>
+        <div class='appointment-add' style="display:none">
+            <h4>Please add appointment for the selected date</h4>
+            <input type="text" class="appointment-save-text">
+            <button class='appointment-save'>Submit</button>
+        </div>
+        <div class='appointment-edit' style="display:none">
+            <h4>Please edit appointment for: <span class="appointment-update-date"></span></h4>
+            <input type="text" class="appointment-update-text">
+            <button class='appointment-update'>Submit</button>
+        </div>
+        
+        <ul class='appointment-list'>
+            
+        </ul>
+
+    </body>
+</html>

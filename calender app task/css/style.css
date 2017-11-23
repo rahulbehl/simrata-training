@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+    background-position: top;
+}
+ul.appointment-list li{
+    border: 1px solid #ab0a0a;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+}
