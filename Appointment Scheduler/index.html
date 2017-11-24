@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="time/jquery.timepicker.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="time/jquery.timepicker.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Record Apppointments</h1>
+        <div id="select-options">
+            <h3>Select Date : <input type="text" id="datepicker"></h3>
+            <h3>Select Time : <input type="text" id="timepicker"></h3>
+        </div>
+        <div class='events' style="display:none">
+            <h4>Please add appointment for the selected date</h4>
+            <input type="text" class="appointment-save-text">
+            <button type="button" class="btn btn-success appointment-save">Submit</button>
+        </div>
+        <div class='events-edit' style="display:none">
+            <h4>Please edit appointment for: <span class="events-update-date"></span></h4>
+            <input type="text" class="events-update-text">
+            <button type="button" class="btn btn-success events-update">Edit</button>
+        </div>
+        <ul class='schedule'> </ul>
+    </div>
+</body>
+</html>

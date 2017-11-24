@@ -1,0 +1,73 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+table {
+	font-size: 1em;
+}
+.container-fluid{
+	min-height: 500px;
+	border: 2px solid lightblue;
+	width: 70%;
+	margin-left: 15%;
+	margin: auto;
+	text-align: center;
+	color: #2376b9;
+}
+h1{
+	border-bottom: 2px solid lightgray;
+}
+.events-edit, .events{
+	margin-bottom: 20px;
+}
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+ul.schedule{
+	list-style: none;
+	text-align: center;
+	margin-left: 30%;
+}
+ul.schedule li{
+	border: 2px dotted #2376b9;
+	border-radius: 5px;
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.ui-timepicker-list li{
+	background-color:#add8e6;
+	padding: 6px 0 3px 15px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+	border:1px solid #00bcd4;
+}
+.ui-widget-content{
+	color: #00BCD4;
+	background: #e6e6e6;
+
+}
+.ui-datepicker .ui-datepicker-title{
+background-color: #8eb0cc;
+}
+.ui-widget-header {
+	border: 2px solid #607D8B;
+	background: #e9e9e9;
+	color: #333333;
+	font-weight: bold;
+}
+.ui-widget.ui-widget-content{
+	border: 2px solid #607D8B;
+}
+.ui-datepicker{
+	padding: 2.2em 2.2em 30px;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight{
+	background: #add282;
+	border: 1px solid #4e5fbf;
+	color: #4e5fbf;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+	background: #2376b9;
+}
