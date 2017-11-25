@@ -1,0 +1,91 @@
+body {
+  font-family: 'Titillium Web';
+  color: #263a4d; }
+  body .container {
+    width: 100%;
+    float: left;
+    margin: auto; }
+    body .container header {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 42px;
+      color: #3f847d;
+      border-bottom: 2px solid #9c9393; }
+    body .container #search {
+      width: 100%;
+      float: left; }
+      body .container #search #mysearch {
+        width: 91%;
+        height: 40px;
+        margin-bottom: 15px;
+        text-wrap: normal;
+        float: left;
+        font-size: 22px; }
+      body .container #search .btn {
+        width: 7%;
+        height: 40px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        font-size: 20px;
+        background: linear-gradient(#bce4f5, #7878a0);
+        color: #585757;
+        border: 1px solid #585757; }
+    body .container #section {
+      width: 100%;
+      float: left; }
+      body .container #section .col-sm-6 {
+        text-align: center;
+        font-size: 26px;
+        background-color: #d1d6d9;
+        border: 1px solid #544f4f;
+        padding: 5px 5px; }
+      body .container #section #first-section, body .container #section #second-section {
+        width: 50%;
+        float: left;
+        border: 1px solid gray;
+        min-height: 600px; }
+        body .container #section #first-section .border, body .container #section #second-section .border {
+          background-color: #fff !important;
+          border: 2px solid grey;
+          border-style: dotted; }
+        body .container #section #first-section .col-sm-4, body .container #section #second-section .col-sm-4 {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-right: 15px;
+          margin-left: 20px;
+          height: 170px;
+          width: 170px;
+          overflow: auto;
+          padding-right: 0px;
+          font-size: 18px;
+          border-radius: 10px;
+          cursor: pointer;
+          border: 2px solid grey;
+          border-style: dotted; }
+          body .container #section #first-section .col-sm-4 p, body .container #section #second-section .col-sm-4 p {
+            float: left;
+            position: relative;
+            overflow-wrap: break-word; }
+          body .container #section #first-section .col-sm-4 textarea, body .container #section #second-section .col-sm-4 textarea {
+            height: 100%;
+            width: 113px;
+            border: none;
+            float: left; }
+          body .container #section #first-section .col-sm-4 .task-edit, body .container #section #second-section .col-sm-4 .task-edit {
+            position: relative;
+            float: right; }
+          body .container #section #first-section .col-sm-4 .fa, body .container #section #second-section .col-sm-4 .fa {
+            float: right;
+            width: 100%;
+            text-align: end;
+            font-size: 16px;
+            margin-top: 5px;
+            margin-right: 5px; }
+      body .container #section #first-section .col-sm-4 {
+        background: #acafb1;
+        box-shadow: 0px 1px 9px 1px #a02c2c; }
+      body .container #section #second-section .col-sm-4 {
+        background: #9cc6e4;
+        box-shadow: 0px 1px 9px 1px #009688; }
