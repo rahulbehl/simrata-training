@@ -1,0 +1,45 @@
+<html>
+<head> 
+  <title>Task Making App</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/taskmakingapp.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/newjquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#first-section, #second-section" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+    $( "#first-section" ).sortable({ placeholder: "border" });
+    $( "#second-section" ).sortable({ placeholder: "border" });
+  } );
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <header> Task Making App </header>
+    <form>
+      <div id="search">
+        <textarea type="search" id="mySearch" name="q"></textarea>
+        <button id="add" class="btn btn-success">Add</button>
+      </div>
+    </form> 
+    <div id="section"> 
+      <div class="col-sm-6" > List Of Tasks </div>
+      <div class="col-sm-6" > Archieve </div>
+      <div id="first-section" class="connectedSortable">  </div>
+      
+      <div id="second-section" class="connectedSortable"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/taskmakingapp.js"></script>
+</body>
+</html>
